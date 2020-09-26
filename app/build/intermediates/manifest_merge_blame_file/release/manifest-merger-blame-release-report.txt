@@ -1,0 +1,311 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.prank.sexygirl.videocall"
+4    android:versionCode="13"
+5    android:versionName="1.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:7:5-79
+12-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:8:5-65
+13-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:8:22-62
+14
+15    <!--
+16         Have developers add this. We don't want AUDIO permission to be auto-added to
+17         apps that just want to take pictures.
+18    -->
+19    <!-- uses-permission android:name="android.permission.RECORD_AUDIO" / -->
+20    <uses-feature
+20-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:21:5-23:36
+21        android:name="android.hardware.camera"
+21-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:22:9-47
+22        android:required="false" />
+22-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:23:9-33
+23    <uses-feature
+23-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:24:5-26:36
+24        android:name="android.hardware.camera.autofocus"
+24-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:25:9-57
+25        android:required="false" />
+25-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:26:9-33
+26    <uses-feature
+26-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:27:5-29:36
+27        android:name="android.hardware.camera.front"
+27-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:28:9-53
+28        android:required="false" />
+28-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:29:9-33
+29    <uses-feature
+29-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:30:5-32:36
+30        android:name="android.hardware.microphone"
+30-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:31:9-51
+31        android:required="false" />
+31-->[com.otaliastudios:cameraview:2.6.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/8bc00d285ad60e4c0b0ab4948047b6f8/jetified-cameraview-2.6.4/AndroidManifest.xml:32:9-33
+32
+33    <uses-permission android:name="android.permission.WAKE_LOCK" />
+33-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/eed99e10d77660b8fc433784447953df/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:24:5-68
+33-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/eed99e10d77660b8fc433784447953df/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:24:22-65
+34    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+34-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:5-110
+34-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:22-107
+35
+36    <application
+36-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:10:5-51:19
+37        android:name="com.prank.sexygirlcallprank.MyApplication"
+37-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:11:9-65
+38        android:allowBackup="false"
+38-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:12:9-36
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/b8a42566902122ba073398481a046a17/core-1.3.1/AndroidManifest.xml:24:18-86
+40        android:hardwareAccelerated="true"
+40-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:18:9-43
+41        android:icon="@drawable/logo"
+41-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:13:9-38
+42        android:label="@string/app_name"
+42-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:14:9-41
+43        android:networkSecurityConfig="@xml/network_security_config"
+43-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:19:9-69
+44        android:roundIcon="@drawable/logo"
+44-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:15:9-43
+45        android:supportsRtl="true"
+45-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:16:9-35
+46        android:theme="@style/AppTheme"
+46-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:20:9-40
+47        android:usesCleartextTraffic="true" >
+47-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:17:9-44
+48        <activity
+48-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:24:9-27:59
+49            android:name="com.prank.sexygirlcallprank.activity.ProfileActivity"
+49-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:24:19-86
+50            android:screenOrientation="sensorPortrait"
+50-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:25:13-55
+51            android:theme="@style/AppTheme.NoActionBar" />
+51-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:27:13-56
+52        <activity
+52-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:28:9-31:59
+53            android:name="com.prank.sexygirlcallprank.activity.ChatActivity"
+53-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:29:13-77
+54            android:screenOrientation="sensorPortrait"
+54-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:30:13-55
+55            android:theme="@style/AppTheme.NoActionBar" />
+55-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:31:13-56
+56        <activity
+56-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:32:9-35:59
+57            android:name="com.prank.sexygirlcallprank.activity.MainActivity"
+57-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:33:13-77
+58            android:screenOrientation="sensorPortrait"
+58-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:34:13-55
+59            android:theme="@style/AppTheme.NoActionBar" />
+59-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:35:13-56
+60        <activity
+60-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:36:9-39:59
+61            android:name="com.prank.sexygirlcallprank.activity.ExoPlayerActivity"
+61-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:37:13-82
+62            android:screenOrientation="sensorPortrait"
+62-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:38:13-55
+63            android:theme="@style/AppTheme.NoActionBar" />
+63-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:39:13-56
+64        <activity
+64-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:40:9-49:20
+65            android:name="com.prank.sexygirlcallprank.activity.SplashActivity"
+65-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:41:13-79
+66            android:screenOrientation="sensorPortrait"
+66-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:42:13-55
+67            android:theme="@style/AppTheme.NoActionBar" >
+67-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:43:13-56
+68            <intent-filter>
+68-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:44:13-48:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:45:17-69
+69-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:45:25-66
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:47:17-77
+71-->/Users/Krishna/Downloads/NewChatApp/app/src/main/AndroidManifest.xml:47:27-74
+72            </intent-filter>
+73        </activity>
+74
+75        <service
+75-->[com.google.firebase:firebase-database:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/748833f5dd49ac7b3b44915f53cb414a/jetified-firebase-database-19.4.0/AndroidManifest.xml:29:9-35:19
+76            android:name="com.google.firebase.components.ComponentDiscoveryService"
+76-->[com.google.firebase:firebase-database:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/748833f5dd49ac7b3b44915f53cb414a/jetified-firebase-database-19.4.0/AndroidManifest.xml:30:13-84
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:19.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/b21d9d664d0576b41a2ca2c908c34c21/jetified-firebase-common-19.3.1/AndroidManifest.xml:35:13-43
+78            android:exported="false" >
+78-->[com.google.firebase:firebase-database:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/748833f5dd49ac7b3b44915f53cb414a/jetified-firebase-database-19.4.0/AndroidManifest.xml:31:13-37
+79            <meta-data
+79-->[com.google.firebase:firebase-database:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/748833f5dd49ac7b3b44915f53cb414a/jetified-firebase-database-19.4.0/AndroidManifest.xml:32:13-34:85
+80                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+80-->[com.google.firebase:firebase-database:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/748833f5dd49ac7b3b44915f53cb414a/jetified-firebase-database-19.4.0/AndroidManifest.xml:33:17-109
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-database:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/748833f5dd49ac7b3b44915f53cb414a/jetified-firebase-database-19.4.0/AndroidManifest.xml:34:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-crashlytics:17.2.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/be41cb5c4de42b4d225cde01cb835ca2/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:16:13-18:85
+83                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+83-->[com.google.firebase:firebase-crashlytics:17.2.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/be41cb5c4de42b4d225cde01cb835ca2/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:17:17-115
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-crashlytics:17.2.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/be41cb5c4de42b4d225cde01cb835ca2/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:18:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-config:19.2.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/62462de65797bcbac7411c37a046e2a1/jetified-firebase-config-19.2.0/AndroidManifest.xml:32:13-34:85
+86                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+86-->[com.google.firebase:firebase-config:19.2.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/62462de65797bcbac7411c37a046e2a1/jetified-firebase-config-19.2.0/AndroidManifest.xml:33:17-117
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-config:19.2.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/62462de65797bcbac7411c37a046e2a1/jetified-firebase-config-19.2.0/AndroidManifest.xml:34:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:36:13-38:85
+89                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+89-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:37:17-109
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:38:17-82
+91            <meta-data
+91-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/eed99e10d77660b8fc433784447953df/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:30:13-32:85
+92                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+92-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/eed99e10d77660b8fc433784447953df/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:31:17-139
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/eed99e10d77660b8fc433784447953df/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:32:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-installations:16.3.3] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/21446d3168dc3f25c79d4d65a1e3e48e/jetified-firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
+95                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+95-->[com.google.firebase:firebase-installations:16.3.3] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/21446d3168dc3f25c79d4d65a1e3e48e/jetified-firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-installations:16.3.3] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/21446d3168dc3f25c79d4d65a1e3e48e/jetified-firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-abt:19.1.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/fbe731b7f809a5153ba24877fe23e7ce/jetified-firebase-abt-19.1.0/AndroidManifest.xml:13:13-15:85
+98                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+98-->[com.google.firebase:firebase-abt:19.1.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/fbe731b7f809a5153ba24877fe23e7ce/jetified-firebase-abt-19.1.0/AndroidManifest.xml:14:17-109
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-abt:19.1.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/fbe731b7f809a5153ba24877fe23e7ce/jetified-firebase-abt-19.1.0/AndroidManifest.xml:15:17-82
+100        </service>
+101
+102        <activity
+102-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:24:9-31:50
+103            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+103-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:25:13-85
+104            android:excludeFromRecents="true"
+104-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:26:13-46
+105            android:exported="true"
+105-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:27:13-36
+106            android:launchMode="singleTask"
+106-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:28:13-44
+107            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+107-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:29:13-102
+108            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+108-->[com.google.firebase:firebase-auth:19.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/d53bfb1613a39d502234f4aa12398d90/jetified-firebase-auth-19.4.0/AndroidManifest.xml:30:13-72
+109        <activity
+109-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:15:9-19:75
+110            android:name="com.facebook.ads.AudienceNetworkActivity"
+110-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:16:13-68
+111            android:configChanges="keyboardHidden|orientation|screenSize"
+111-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:17:13-74
+112            android:exported="false"
+112-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:18:13-37
+113            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+113-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:19:13-72
+114
+115        <provider
+115-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:21:9-24:40
+116            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+116-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:22:13-75
+117            android:authorities="com.prank.sexygirl.videocall.AudienceNetworkContentProvider"
+117-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:23:13-82
+118            android:exported="false" />
+118-->[com.facebook.android:audience-network-sdk:6.0.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/f017039db5d7953e413fd9a03010e738/jetified-audience-network-sdk-6.0.0/AndroidManifest.xml:24:13-37
+119
+120        <activity
+120-->[com.google.android.gms:play-services-base:17.1.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1adebc941895100039ac654cbbaf2e27/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+121            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+121-->[com.google.android.gms:play-services-base:17.1.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1adebc941895100039ac654cbbaf2e27/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+122            android:exported="false"
+122-->[com.google.android.gms:play-services-base:17.1.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1adebc941895100039ac654cbbaf2e27/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.google.android.gms:play-services-base:17.1.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1adebc941895100039ac654cbbaf2e27/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+124
+125        <provider
+125-->[com.google.firebase:firebase-common:19.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/b21d9d664d0576b41a2ca2c908c34c21/jetified-firebase-common-19.3.1/AndroidManifest.xml:26:9-31:39
+126            android:name="com.google.firebase.provider.FirebaseInitProvider"
+126-->[com.google.firebase:firebase-common:19.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/b21d9d664d0576b41a2ca2c908c34c21/jetified-firebase-common-19.3.1/AndroidManifest.xml:27:13-77
+127            android:authorities="com.prank.sexygirl.videocall.firebaseinitprovider"
+127-->[com.google.firebase:firebase-common:19.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/b21d9d664d0576b41a2ca2c908c34c21/jetified-firebase-common-19.3.1/AndroidManifest.xml:28:13-72
+128            android:directBootAware="true"
+128-->[com.google.firebase:firebase-common:19.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/b21d9d664d0576b41a2ca2c908c34c21/jetified-firebase-common-19.3.1/AndroidManifest.xml:29:13-43
+129            android:exported="false"
+129-->[com.google.firebase:firebase-common:19.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/b21d9d664d0576b41a2ca2c908c34c21/jetified-firebase-common-19.3.1/AndroidManifest.xml:30:13-37
+130            android:initOrder="100" />
+130-->[com.google.firebase:firebase-common:19.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/b21d9d664d0576b41a2ca2c908c34c21/jetified-firebase-common-19.3.1/AndroidManifest.xml:31:13-36
+131
+132        <receiver
+132-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:29:9-33:20
+133            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+133-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:30:13-85
+134            android:enabled="true"
+134-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:31:13-35
+135            android:exported="false" >
+135-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:32:13-37
+136        </receiver>
+137
+138        <service
+138-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:35:9-38:40
+139            android:name="com.google.android.gms.measurement.AppMeasurementService"
+139-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:36:13-84
+140            android:enabled="true"
+140-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:37:13-35
+141            android:exported="false" />
+141-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:38:13-37
+142        <service
+142-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:39:9-43:72
+143            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+143-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:40:13-87
+144            android:enabled="true"
+144-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:41:13-35
+145            android:exported="false"
+145-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:42:13-37
+146            android:permission="android.permission.BIND_JOB_SERVICE" />
+146-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/405ac19fd7ddef0d4a590bace6f1f458/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:43:13-69
+147
+148        <meta-data
+148-->[com.google.android.gms:play-services-basement:17.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/0ad0d069bdaca3cc99b6846fa4393d96/jetified-play-services-basement-17.4.0/AndroidManifest.xml:23:9-25:69
+149            android:name="com.google.android.gms.version"
+149-->[com.google.android.gms:play-services-basement:17.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/0ad0d069bdaca3cc99b6846fa4393d96/jetified-play-services-basement-17.4.0/AndroidManifest.xml:24:13-58
+150            android:value="@integer/google_play_services_version" />
+150-->[com.google.android.gms:play-services-basement:17.4.0] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/0ad0d069bdaca3cc99b6846fa4393d96/jetified-play-services-basement-17.4.0/AndroidManifest.xml:25:13-66
+151
+152        <service
+152-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1faea9d3862531e178e2c91a7c12a076/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:29:9-35:19
+153            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+153-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1faea9d3862531e178e2c91a7c12a076/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:30:13-103
+154            android:exported="false" >
+154-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1faea9d3862531e178e2c91a7c12a076/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:31:13-37
+155            <meta-data
+155-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1faea9d3862531e178e2c91a7c12a076/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:32:13-34:39
+156                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+156-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1faea9d3862531e178e2c91a7c12a076/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:33:17-94
+157                android:value="cct" />
+157-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/1faea9d3862531e178e2c91a7c12a076/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:34:17-36
+158        </service>
+159        <service
+159-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/e21284c629ef0756ee9b2c47d90b945c/jetified-transport-runtime-2.2.4/AndroidManifest.xml:26:9-30:19
+160            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+160-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/e21284c629ef0756ee9b2c47d90b945c/jetified-transport-runtime-2.2.4/AndroidManifest.xml:27:13-117
+161            android:exported="false"
+161-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/e21284c629ef0756ee9b2c47d90b945c/jetified-transport-runtime-2.2.4/AndroidManifest.xml:28:13-37
+162            android:permission="android.permission.BIND_JOB_SERVICE" >
+162-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/e21284c629ef0756ee9b2c47d90b945c/jetified-transport-runtime-2.2.4/AndroidManifest.xml:29:13-69
+163        </service>
+164
+165        <receiver
+165-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/e21284c629ef0756ee9b2c47d90b945c/jetified-transport-runtime-2.2.4/AndroidManifest.xml:32:9-34:40
+166            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+166-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/e21284c629ef0756ee9b2c47d90b945c/jetified-transport-runtime-2.2.4/AndroidManifest.xml:33:13-132
+167            android:exported="false" />
+167-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/Krishna/.gradle/caches/transforms-2/files-2.1/e21284c629ef0756ee9b2c47d90b945c/jetified-transport-runtime-2.2.4/AndroidManifest.xml:34:13-37
+168    </application>
+169
+170</manifest>

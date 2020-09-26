@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/_25ssp"
+        android:layout_marginStart="10dp"
+        android:text="@string/contacts"
+        android:fontFamily="@font/gothic"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorGrY"
+        android:textSize="@dimen/_15ssp"
+        android:visibility="gone"
+        android:fontFamily="@font/gothic"
+        android:text="@string/add_your_favourite_girls"/>
+
+</RelativeLayout>

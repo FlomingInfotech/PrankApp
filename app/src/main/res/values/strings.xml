@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">Sexy Girl Video Call &amp; Chat - Prank</string>
+    <string name="lbl_retry">Retry</string>
+    <string name="lbl_connect_internet">Please connect to internet</string>
+    <string name="copyright_2019_by_the_zee_apps">Copyright © 2020 By The Zee App</string>
+    <string name="search">Search</string>
+    <string name="add_contacts">Add contacts</string>
+    <string name="contacts">Contacts</string>
+    <string name="lbl_send_email">Send Email</string>
+    <string name="lbl_app_share_message">Super Sexy App for Sexy Girl Video Call &amp; Chat Free Download now</string>
+    <string name="lbl_share_app">Share the app</string>
+    <string name="lbl_setting_privacy_policy_url">https://sites.google.com/view/thezeeapp</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_message">Please grant permission to access camera to run this application.</string>
+    <string name="txt_no_internet">No Internet Connection</string>
+    <string name="d_name">SexyCelebrity</string>
+    <string name="txt_alrt">If you enjoy app.Please take a moment to rate it.Thanks for your support.</string>
+    <string name="txt_rate">RATE NOW</string>
+    <string name="txt_later">LATER</string>
+    <string name="txt_permission">Permission was denied.Please grant permission to access camera</string>
+    <string name="txt_setting">Setting</string>
+    <string name="txt_notnow">Not Now</string>
+    <string name="facetime">Facetime</string>
+    <string name="share_to_friends">Share to Friends</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="feedback">Feedback</string>
+    <string name="add_your_favourite_girls">Add your favourite girls</string>
+    <string name="store_url"><![CDATA[https://play.google.com/store/apps/developer?id=Zee+App&hl=en]]></string>
+    <string name="store_url_tiktok">https://play.google.com/store/apps/details?id=com.zeeapp.tiktokcelebrity&amp;hl=en</string>
+    <string name="store_url_celeb">https://play.google.com/store/apps/details?id=com.zeeapp.sexycelebrity</string>
+    <string name="calling">Calling…</string>
+    <string name="lbl_lara">Mallika Gour</string>
+    <string name="lbl_angela">Neha Khurana</string>
+    <string name="lbl_babita">Genelia Madan</string>
+    <string name="lbl_tiktok">Tiktok Video Call</string>
+    <string name="lbl_daisy">Lara Kapur</string>
+    <string name="lbl_gigi">Rihanna Mahal</string>
+    <string name="lbl_kyra">Riya Dhawan</string>
+    <string name="lbl_celb">Sexy Girls Video Call</string>
+    <string name="lbl_laila">Diana Kurian</string>
+    <string name="lbl_key">Feedback</string>
+    <string name="lbl_type">Typing...</string>
+    <string name="lbl_online">Online</string>
+
+
+</resources>

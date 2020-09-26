@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.prank.sexygirl.videocall"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 13
+        versionName "1.3"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            resValue("string", "ADMOB_ID", "338565760721586")
+            resValue("string", "Ad_Banner", "338565760721586_338567354054760")
+            resValue("string", "Ad_Interstitial", "338565760721586_338569010721261")
+            minifyEnabled true
+            useProguard true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            resValue("string", "ADMOB_ID", "338565760721586")
+            resValue("string", "Ad_Banner", "338565760721586_338567354054760")
+            resValue("string", "Ad_Interstitial", "338565760721586_338569010721261")
+            minifyEnabled false
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.8'
+    implementation 'com.github.mohammadatif:Animatoo:master'
+    api 'com.otaliastudios:cameraview:2.6.4'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.7'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.firebase:firebase-config:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.0.0'
+}
