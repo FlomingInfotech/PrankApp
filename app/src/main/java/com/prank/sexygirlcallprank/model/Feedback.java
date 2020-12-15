@@ -1,9 +1,9 @@
 package com.prank.sexygirlcallprank.model;
 
 public class Feedback {
-    private String email;
+    public String email;
 
-    private String feedback;
+    public String feedback;
 
 
 

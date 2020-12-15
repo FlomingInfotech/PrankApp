@@ -3,6 +3,7 @@ package com.prank.sexygirlcallprank.activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -174,17 +175,17 @@ public class ChatActivity extends AppCompatActivity {
                 String obj = editMsg.getText().toString().trim();
                 if (!ConstantMethod.isEmpty(obj)) {
                     mo11669c(obj);
-                    new Handler().postDelayed(() -> online.setText(R.string.lbl_type), 900);
+                    new Handler(Looper.getMainLooper()).postDelayed(() -> online.setText(R.string.lbl_type), 900);
 
                     if (count <= 3) {
                         count++;
-                        new Handler().postDelayed(() -> online.setText(R.string.lbl_online), 2000);
-                        new Handler().postDelayed(new C4019a()
+                        new Handler(Looper.getMainLooper()).postDelayed(() -> online.setText(R.string.lbl_online), 2000);
+                        new Handler(Looper.getMainLooper()).postDelayed(new C4019a()
                                 , 3000);
                     } else {
                         count = 0;
-                        new Handler().postDelayed(() -> online.setText(R.string.lbl_online), 4000);
-                        new Handler().postDelayed(new C4019a()
+                        new Handler(Looper.getMainLooper()).postDelayed(() -> online.setText(R.string.lbl_online), 4000);
+                        new Handler(Looper.getMainLooper()).postDelayed(new C4019a()
                                 , 5000);
                     }
                     editMsg.setText("");
@@ -223,7 +224,7 @@ public class ChatActivity extends AppCompatActivity {
                         .setAnimationSpeed(2)
                         .setDimAmount(0.5f)
                         .show();
-                new Handler().postDelayed(new Runnable() {
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         hud.dismiss();

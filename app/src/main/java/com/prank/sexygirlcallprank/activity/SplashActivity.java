@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -111,7 +112,7 @@ public class SplashActivity extends AppCompatActivity {
     private void setupConst() {
         Prefs.putString(ConstantMethod.BANNER_ID, getString(R.string.Ad_Banner));
         Prefs.putString(ConstantMethod.INTRESTIAL_ID, getString(R.string.Ad_Interstitial));
-        new Handler().postDelayed(() -> {
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
 
             Intent i = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(i);

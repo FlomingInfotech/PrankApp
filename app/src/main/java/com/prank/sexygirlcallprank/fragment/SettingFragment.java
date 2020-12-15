@@ -30,7 +30,7 @@ import com.prank.sexygirlcallprank.model.Feedback;
 
 
 public class SettingFragment extends Fragment implements View.OnClickListener {
-    private DatabaseReference database = FirebaseDatabase.getInstance().getReference();
+     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

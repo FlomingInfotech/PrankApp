@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -203,7 +204,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                         .setAnimationSpeed(2)
                         .setDimAmount(0.5f)
                         .show();
-                new Handler().postDelayed(new Runnable() {
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         hud.dismiss();

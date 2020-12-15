@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class GirlsList implements Serializable {
 
-    private String id;
-    private String contact;
-    private String name;
-    private int avatar;
-    private int video;
+    public String id;
+    public String contact;
+    public String name;
+    public int avatar;
+    public int video;
 
     public GirlsList(String id, String contact, String name, int avatar, int video) {
         this.id = id;

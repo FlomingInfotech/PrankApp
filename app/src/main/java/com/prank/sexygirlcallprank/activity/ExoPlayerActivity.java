@@ -3,6 +3,7 @@ package com.prank.sexygirlcallprank.activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -88,8 +89,8 @@ public class ExoPlayerActivity extends AppCompatActivity implements Player.Event
             }
 
 
-            mHandler = new Handler();
-            mHandlerAudio = new Handler();
+            mHandler = new Handler(Looper.getMainLooper());
+            mHandlerAudio = new Handler(Looper.getMainLooper());
             audioPlayer = new AudioPlayer();
 
             changeStatusBarColor();
@@ -281,7 +282,7 @@ public class ExoPlayerActivity extends AppCompatActivity implements Player.Event
 
     @Override
     public void onBackPressed() {
-        new Handler().postDelayed(() -> {
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
 
             finish();
             pausePlayer();
